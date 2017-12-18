@@ -15,6 +15,15 @@
 	模块化相关的规则：
 		1.如何定义模块： 一个js文件就是一个模块，模块内的成员（变量、函数）都是相互独立的
 		2.模块成员的导出和引入：
+
+		模块的导出以 module.exports 为准
+
+		module.exports 和 exoprts 的关系
+		module.exports = exports = {};
+
+		如果要导出的成员较少，推荐使用exprots
+		如果要导出的成员较多，推荐使用module.exports
+		这两种方式不可以同时使用
  */
 
 //定义模块
